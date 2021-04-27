@@ -29,7 +29,7 @@ namespace empdatabase
                 {
                 if(conn!=null)
                 {
-                    conn.Close();
+                    conn.Close(); // mandatory step :  wheather the database is connected or not the resources should released ..
                 }
 
 
