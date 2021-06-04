@@ -369,3 +369,9 @@ CreateBasicReport/CreateBasicReport/Form1.Designer.cs
 CreateBasicReport/CreateBasicReport/Form1.resx
 Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/Resources.Designer.cs
 Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/AssemblyInfo.cs
+Employee_RDLC_Demo/Employee_RDLC_Demo/Employee_RDLC_Demo.csproj
+Employee_RDLC_Demo/Employee_RDLC_Demo/Form1.Designer.cs
+Employee_RDLC_Demo/Employee_RDLC_Demo/packages.config
+Employee_RDLC_Demo/Employee_RDLC_Demo/Employee_info_DataSet1.xsd
+Employee_RDLC_Demo/Employee_RDLC_Demo/Employee_info_DataSet1.xsc
+Employee_RDLC_Demo/Employee_RDLC_Demo/Employee_info_DataSet1.Designer.cs
