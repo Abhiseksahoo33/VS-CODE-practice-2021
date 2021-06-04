@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+Employee_RDLC_Demo/Employee_RDLC_Demo/SqlServerTypes/readme.htm
+Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/Settings.Designer.cs
+Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/Settings.settings
+Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/Resources.resx
+CreateBasicReport/CreateBasicReport/Form1.Designer.cs
+CreateBasicReport/CreateBasicReport/Form1.resx
+Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/Resources.Designer.cs
+Employee_RDLC_Demo/Employee_RDLC_Demo/Properties/AssemblyInfo.cs
