@@ -7,16 +7,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace Employee_CRUD_RDLC_webapp
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        string ConnectionString = @"Data Source=ABHI-SEK\MSSQLSERVER01;Initial Catalog=sqlpractice;Persist Security Info=True;User ID=sa;Password=abhip0215# ";
+        string ConnectionString = @"Data Source=ABHI-SEK\MSSQLSERVER01;Initial Catalog=sqlpractice;Persist Security Info=True;User ID=sa;Password=abhip0215#";
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        } 
+        }
         protected void btnClick_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(ConnectionString);
@@ -35,6 +34,6 @@ namespace Employee_CRUD_RDLC_webapp
             rv.LocalReport.EnableHyperlinks = true;
 
         }
-        
+
     }
 }

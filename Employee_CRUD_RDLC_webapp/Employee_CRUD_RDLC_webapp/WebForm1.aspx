@@ -11,11 +11,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="btnClick" runat="server" OnClick="btnClick_Click" Text="Show Employee Report" />
+            <asp:Button ID="btnClick" runat="server" OnClick="btnClick_Click" Text="Show Report" />
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-            <rsweb:ReportViewer ID="rv" runat="server" Height="550px" Width="941px"></rsweb:ReportViewer>
+            <rsweb:ReportViewer ID="rv" runat="server" Width="671px"></rsweb:ReportViewer>
         </div>
     </form>
-    
 </body>
 </html>
