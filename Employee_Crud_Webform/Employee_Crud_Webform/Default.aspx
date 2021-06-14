@@ -3,12 +3,12 @@
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <div style="background-color:lightblue">
     <div>
-      <div  style="font-size:x-large" align="center">Employee's Info Manage Page </div>
+      <div  style="font-size:x-large ; background-color:blue ; color:white" align="center">Employee Info Manage Page </div>
       <br />
 
-      <table class="nav-justified">
+      <table  class="nav-justified">
           <tr>
               <td>&nbsp;</td>
               <td>Employee ID</td>
@@ -27,9 +27,9 @@
               <td style="height: 22px"></td>
           </tr>
           <tr>
-              <td style="width: 136px">&nbsp;</td>
-              <td style="width: 112px">Department</td>
-              <td style="width: 729px">
+              <td style="width: 136px; height: 22px;"></td>
+              <td style="width: 112px; height: 22px;">Department</td>
+              <td style="width: 729px; height: 22px;">
                   <asp:DropDownList ID="DropDownList1" runat="server" Height="17px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="113px">
                       <asp:ListItem>.Net</asp:ListItem>
                       <asp:ListItem>C</asp:ListItem>
@@ -40,8 +40,8 @@
                       <asp:ListItem>PHP</asp:ListItem>
                   </asp:DropDownList>
               </td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+              <td style="height: 22px"></td>
+              <td style="height: 22px"></td>
           </tr>
           <tr>
               <td style="width: 136px">&nbsp;</td>
@@ -53,6 +53,25 @@
                       <asp:ListItem>Intern</asp:ListItem>
                       <asp:ListItem>Operation Executive</asp:ListItem>
                   </asp:DropDownList>
+                  <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataSourceID="SqlDataSource1" Height="50px" Width="165px">
+                      <Fields>
+                          <asp:BoundField DataField="Empno" HeaderText="Empno" SortExpression="Empno" />
+                          <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                          <asp:BoundField DataField="dept" HeaderText="dept" SortExpression="dept" />
+                          <asp:BoundField DataField="desig" HeaderText="desig" SortExpression="desig" />
+                          <asp:BoundField DataField="basic" HeaderText="basic" SortExpression="basic" />
+                      </Fields>
+                  </asp:DetailsView>
+                  <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display.">
+                      <Columns>
+                          <asp:BoundField DataField="Empno" HeaderText="Empno" SortExpression="Empno" />
+                          <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                          <asp:BoundField DataField="dept" HeaderText="dept" SortExpression="dept" />
+                          <asp:BoundField DataField="desig" HeaderText="desig" SortExpression="desig" />
+                          <asp:BoundField DataField="basic" HeaderText="basic" SortExpression="basic" />
+                      </Columns>
+                  </asp:GridView>
+                  <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlpracticeConnectionString %>" ProviderName="<%$ ConnectionStrings:sqlpracticeConnectionString.ProviderName %>" SelectCommand="SELECT [Empno], [name], [dept], [desig], [basic] FROM [Emp]"></asp:SqlDataSource>
               </td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
@@ -121,12 +140,16 @@
           </tr>
       </table>
 
-        <formview>
+        
 
-      <rsweb:reportviewer ID="rv" runat="server" Width="986px" style="margin-left: 125px"></rsweb:reportviewer>
-        </formview>
-   
   </div>
+        <rsweb:reportviewer ID="rv" runat="server" Width="986px" style="margin-left: 125px; margin-right: 0px;" Height="493px"></rsweb:reportviewer>
+        </div>
 
-</asp:Content>
+        
+
+      
+     
+   
+  </asp:Content>
 
